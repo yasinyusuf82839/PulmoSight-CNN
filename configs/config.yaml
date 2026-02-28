@@ -1,0 +1,15 @@
+data:
+  dataset_dir: data/lung_histopath
+  image_size: [224, 224]
+  val_split: 0.2
+
+training:
+  batch_size: 32
+  epochs: 20
+  learning_rate: 0.001
+  num_workers: 2
+  seed: 42
+
+output:
+  artifacts_dir: outputs
+  weights_name: best_model.pt
